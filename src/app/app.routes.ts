@@ -2,6 +2,10 @@ import { Routes } from '@angular/router';
 
 import { CategoryCreateComponent }
     from './features/categories/components/category-create/category-create.component';
+import { CategoryEditComponent }
+    from './features/categories/components/category-edit/category-edit.component';
+import { CategoryDeleteComponent }
+    from './features/categories/components/category-delete/category-delete.component';
 
 /****************************
  * NOTE:
@@ -27,5 +31,13 @@ export const routes: Routes = [
     {
         path: 'categories/create',
         component: CategoryCreateComponent
+    },
+    {
+        path: 'categories/edit/:id',
+        component: CategoryEditComponent
+    },
+    {
+        path: 'categories/delete/:id',
+        component: CategoryDeleteComponent
     }
 ];
